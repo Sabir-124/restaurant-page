@@ -1,0 +1,66 @@
+.rice-selection-section {
+  display: flex; flex-direction: column; row-gap: 30px;
+}
+.recipes {
+  text-align: center; position: relative; margin: 0 auto; max-width: 100%; display: flex; width: 1300px;
+}
+.recipe {
+  position: relative; display: inline-block; border: 1px solid #dd5738; border-radius: 50px; margin: 30px 0;
+}
+.recipe::before {
+  content: ''; position: absolute; top: -5px; left: -5px; bottom: -5px; right: -5px; border-radius: 50px;
+  background: linear-gradient(300deg, #FF0000, #FFA500);
+  z-index: -1;
+  filter: blur(15px);
+}
+.recipe-image img {
+  width: 300px; border-radius: 50px 50px 0 0; object-fit: cover; object-position: center; margin: 0; height: 300px; display: block;
+}
+.recipe-info {
+  border: none; border-radius: 0 0 50px 50px; margin-top: -4px; padding: 20px; display: flex; flex-direction: column; row-gap: 15px; background-color: black;
+}
+.recipe-name p {
+  font-size: 25px; margin: 0; font-weight: 600; margin-bottom: 5px;
+}
+.price1{
+  display: flex; justify-content: space-around;
+}
+.price label {
+  display: flex; justify-content: space-between;
+}
+.price,
+.price1 span {
+  font-weight: 500;
+}
+.price input {
+  cursor: pointer; width: 30px; margin: 0; padding: 0;
+}
+.recipe-order {
+  display: flex; justify-content: space-around; margin-top: 15px;
+}
+.recipe-order input{
+  padding: 5px; width: 120px; border-radius: 50px; border: none; transition: box-shadow 0.3s; color: #dd5738; text-align: center;
+}
+.recipe-order input:focus,
+.recipe-order input:hover {
+  box-shadow: inset 0 0 15px #dd5738; outline: none;
+}
+.recipe-order input::placeholder {
+  color: #dd5738; opacity: 0.5;
+}
+.recipe-order button {
+  border: 1px solid #dd5738; cursor: pointer; padding: 10px; background: transparent; color: #dd5738; border-radius: 50px;
+}
+.recipe-order button:hover {
+  background: linear-gradient(300deg, #FF0000, #FFA500);
+  color: white;
+}
+.scroll-control-button {
+  text-align: center;
+}
+.scroll-control-button button {
+  border: 1px solid #dd5738; padding: 10px 20px; font-size: 20px; border-radius: 30px; background-color: transparent; color: #dd5738; box-shadow: 0 0 15px #dd5738; transition: background-color 0.3s; cursor: pointer; margin-bottom: -20px;
+}
+.scroll-control-button button:hover {
+  background-color: #dd5738; color: white;
+}

@@ -1,0 +1,9 @@
+.no-order {
+  display: flex; justify-content: center; align-items: center; flex-direction: column; row-gap: 50px; position: fixed; top: 0; bottom: 0; right: 0; left: 0;
+}
+.no-order img {
+  width: 200px;
+}
+.no-order p{
+  margin: 0; font-size: 35px; font-weight: 600; font-style: italic;
+}

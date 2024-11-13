@@ -1,0 +1,23 @@
+.review-section {
+  display: flex; flex-direction: column; justify-content: center; align-items: center; text-align: center; row-gap: 50px;
+}
+.before-review {
+  font-size: 30px;
+}
+.reviews {
+  display: flex; flex-direction: column; row-gap: 50px; padding: 0 100px;
+}
+.review {
+  display: flex; flex: 1; max-width: 100%; flex-direction: row; justify-content: center; align-items: center; text-align: center; padding: 0 10%; column-gap: 50px;
+}
+.review-image img{
+  width: 140px; height: 140px; object-position: top; object-fit: cover; border-radius: 50%; box-shadow: 0px 0px 20px 3px white;
+}
+.review-text {
+  font-size: 20px;
+}
+@media (max-width: 854px) {
+  .review {
+    flex-direction: column; row-gap: 20px;
+  }
+}

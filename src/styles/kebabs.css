@@ -1,0 +1,3 @@
+.kebab-section {
+  display: flex; flex-direction: column; row-gap: 30px;
+}

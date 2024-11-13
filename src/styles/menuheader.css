@@ -1,0 +1,84 @@
+.menu-header-section {
+  display: flex; position: fixed; top: 0; left: 0; right: 0; background-color: rgba(0, 0, 0, 0.5); height: 50px; z-index: 2; justify-content: space-around; align-items: center; box-shadow: 0 0 10px 0 white;
+}
+.restaurant-name {
+  font-size: 25px; font-weight: 700; display: flex; align-items: center; column-gap: 15px; cursor: pointer; text-decoration: none; text-align: center;
+}
+.restaurant-name img{
+  width: 30px;
+}
+.links {
+  display: flex; justify-content: space-around; flex: 1; max-width: 45%; align-items: center; text-align: center; column-gap: 5px;
+}
+.links span {
+  font-weight: 500; position: relative; cursor: pointer;
+}
+.links span::after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 5px; /* Line thickness */
+  background-color: white; /* Line color */
+  bottom: -15px;
+  left: 50%;
+  transform: translateX(-50%);
+  transition: width 0.3s ease;
+}
+.links span:hover::after {
+  width: 130%;
+}
+.show-order-button {
+  position: relative; overflow: hidden;
+  font-size: 15px; font-weight: 500;
+  border: 1px solid;
+  padding: 10px 25px; color: #dd5738;
+  cursor: pointer;
+  background-color: transparent;
+  border-image: linear-gradient(45deg, #FF0000, #FFA500) 1;
+  transition: background 0.3s ease, color 0.3s ease;
+}
+.show-order-button::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(45deg, #FF0000, #FFA500);
+  transition: left 0.4s ease;
+  z-index: 0;
+}
+.show-order-button span {
+  position: relative; z-index: 1;
+}
+.show-order-button:hover::before {
+  left: 0;
+}
+.show-order-button:hover {
+  color: white;
+}
+.button-section {
+  position: relative;
+}
+.order-quantity {
+  background: linear-gradient(45deg, #FF0000, #FFA500); width: 28px; height: 28px; position: absolute; top: -5px; right: -13px; display: flex; justify-content: center; align-items: center; border-radius: 50%; color: white;
+}
+.order-quantity span {
+  font-size: small;
+}
+@media (max-width: 1024px) {
+  .links {
+    max-width: 50%;
+  }
+  .home-menu {
+    display: none;
+  }
+}
+@media (max-width: 768px) {
+  .restaurant-name p{
+    display: none;
+  }
+  .links{
+    max-width: 100%; padding: 0 15px;
+  }
+}
