@@ -18,7 +18,7 @@ const About = () => {
           <p className='about'>{aboutText}</p>
         </div>
         <div className="image-part">
-          <img src='/images/restaurant.jpeg' alt='about-pic'/>
+          <img src='/restaurant-page/images/restaurant.jpeg' alt='about-pic'/>
         </div>
       </div>
 
@@ -28,7 +28,7 @@ const About = () => {
           <p className='about'>{aboutChef}</p>
         </div>
         <div className="image-part2">
-          <img src='/images/chef.jpeg' alt='chef-pic'/>
+          <img src='/restaurant-page/images/chef.jpeg' alt='chef-pic'/>
         </div>
       </div>
     </div>

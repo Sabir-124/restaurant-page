@@ -10,12 +10,15 @@ import { TotalQuantity } from "./context/TotalQuantityContext.jsx";
 import { OrderProvider } from "./context/OrderContext.jsx";
 import SignUp from "./components/SignUp.jsx";
 
-const router = createBrowserRouter([
-  { path: "/", element: <App /> },
-  { path: "/menu", element: <Menu /> },
-  { path: "/order-page", element: <OrderPage /> },
-  { path: "/signup-page", element: <SignUp /> },
-]);
+const router = createBrowserRouter(
+  [
+    { path: "/", element: <App /> },
+    { path: "/menu", element: <Menu /> },
+    { path: "/order-page", element: <OrderPage /> },
+    { path: "/signup-page", element: <SignUp /> },
+  ],
+  { basename: "/restaurant-page" }
+);
 
 createRoot(document.getElementById("root")).render(
   <StrictMode>

@@ -26,13 +26,48 @@ const RiceSelection = () => {
   };
 
   const RiceSelections = [
-    ["/menu-images/chicken-biryani.jpeg", "Chicken Biryani", "350", "450"],
-    ["/menu-images/beef-biryani.jpeg", "Beef Biryani", "450", "550"],
-    ["/menu-images/chicken-qabuli.jpg", "Chicken Qabuli", "450", "550"],
-    ["/menu-images/mutton-qabuli.jpeg", "Mutton Qabuli", "500", "600"],
-    ["/menu-images/chana-Pulao.jpeg", "Chana Palao", "300", "400"],
-    ["/menu-images/rice-potato.jpeg", "Rice Potato", "250", "300"],
-    ["/menu-images/simple-rice.jpeg", "Basmati Rice", "250", "320"],
+    [
+      "/restaurant-page/menu-images/chicken-biryani.jpeg",
+      "Chicken Biryani",
+      "350",
+      "450",
+    ],
+    [
+      "/restaurant-page/menu-images/beef-biryani.jpeg",
+      "Beef Biryani",
+      "450",
+      "550",
+    ],
+    [
+      "/restaurant-page/menu-images/chicken-qabuli.jpg",
+      "Chicken Qabuli",
+      "450",
+      "550",
+    ],
+    [
+      "/restaurant-page/menu-images/mutton-qabuli.jpeg",
+      "Mutton Qabuli",
+      "500",
+      "600",
+    ],
+    [
+      "/restaurant-page/menu-images/chana-Pulao.jpeg",
+      "Chana Palao",
+      "300",
+      "400",
+    ],
+    [
+      "/restaurant-page/menu-images/rice-potato.jpeg",
+      "Rice Potato",
+      "250",
+      "300",
+    ],
+    [
+      "/restaurant-page/menu-images/simple-rice.jpeg",
+      "Basmati Rice",
+      "250",
+      "320",
+    ],
   ];
 
   const { rice } = useContext(MenuContext);

@@ -26,14 +26,18 @@ const IceCreams = () => {
   };
 
   const IceCreams = [
-    ["/menu-images/vanilla.jpeg", "Vanilla", "200"],
-    ["/menu-images/chocolate.jpeg", "Chocolate", "250"],
-    ["/menu-images/strawberry.jpeg", "Strawberry", "250"],
-    ["/menu-images/cookies-cream.jpeg", "Cookies Cream", "300"],
-    ["/menu-images/cotton-candy.jpeg", "Cotton Candy", "300"],
-    ["/menu-images/mango.jpeg", "Mango", "300"],
-    ["/menu-images/mint-chocolate.jpeg", "Mint Chocolate", "280"],
-    ["/menu-images/rocky-road.jpeg", "Rocky Road", "330"],
+    ["/restaurant-page/menu-images/vanilla.jpeg", "Vanilla", "200"],
+    ["/restaurant-page/menu-images/chocolate.jpeg", "Chocolate", "250"],
+    ["/restaurant-page/menu-images/strawberry.jpeg", "Strawberry", "250"],
+    ["/restaurant-page/menu-images/cookies-cream.jpeg", "Cookies Cream", "300"],
+    ["/restaurant-page/menu-images/cotton-candy.jpeg", "Cotton Candy", "300"],
+    ["/restaurant-page/menu-images/mango.jpeg", "Mango", "300"],
+    [
+      "/restaurant-page/menu-images/mint-chocolate.jpeg",
+      "Mint Chocolate",
+      "280",
+    ],
+    ["/restaurant-page/menu-images/rocky-road.jpeg", "Rocky Road", "330"],
   ];
 
   const { iceCream } = useContext(MenuContext);

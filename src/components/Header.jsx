@@ -16,9 +16,9 @@ const Header = () => {
   return (
     <div className="header">
       <div className="restaurant-name" onClick={scrollHome}>
-        <img src="/icons/rice.png" alt="restaurant-logo" />
+        <img src="/restaurant-page/icons/rice.png" alt="restaurant-logo" />
         <p className="text-color">Rice & Spice</p>
-        <img src="/icons/pepper.png" alt="restaurant-logo" />
+        <img src="/restaurant-page/icons/pepper.png" alt="restaurant-logo" />
       </div>
       <div className="links">
         <span onClick={scrollHome}>Home</span>

@@ -12,7 +12,10 @@ const MenuHome = () => {
     <div className="menu-home">
       <div ref={menuHome}></div>
       <div className="menu-home-image">
-        <img src="/menu-images/menu-pic.jpeg" alt="food-image" />
+        <img
+          src="/restaurant-page/menu-images/menu-pic.jpeg"
+          alt="food-image"
+        />
       </div>
       <div className="menu-home-text">
         <p className="menu-title text-color">Menu</p>

@@ -25,13 +25,13 @@ const Coffee = () => {
   };
 
   const Coffee = [
-    ["/coffee/americano.jpeg", "Americano", "200"],
-    ["/coffee/espresso.jpeg", "Espresso", "200"],
-    ["/coffee/flat-white.jpeg", "Flat White", "230"],
-    ["/coffee/latte.jpeg", "Latte", "230"],
-    ["/coffee/cold.jpeg", "Cold coffee", "250"],
-    ["/coffee/macchiato.jpeg", "Macchiato", "280"],
-    ["/coffee/mocha.jpeg", "Mocha", "300"],
+    ["/restaurant-page/coffee/americano.jpeg", "Americano", "200"],
+    ["/restaurant-page/coffee/espresso.jpeg", "Espresso", "200"],
+    ["/restaurant-page/coffee/flat-white.jpeg", "Flat White", "230"],
+    ["/restaurant-page/coffee/latte.jpeg", "Latte", "230"],
+    ["/restaurant-page/coffee/cold.jpeg", "Cold coffee", "250"],
+    ["/restaurant-page/coffee/macchiato.jpeg", "Macchiato", "280"],
+    ["/restaurant-page/coffee/mocha.jpeg", "Mocha", "300"],
   ];
 
   const { coffee } = useContext(MenuContext);

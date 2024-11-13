@@ -12,11 +12,11 @@ const SignUp = () => {
       experience!
     </span>
   );
-  const name = "/icons/name.png";
-  const email = "/icons/mail.png";
-  const password = "/icons/password.png";
-  const openEye = "/icons/opened-eye.png";
-  const closeEye = "/icons/closed-eye.png";
+  const name = "/restaurant-page/icons/name.png";
+  const email = "/restaurant-page/icons/mail.png";
+  const password = "/restaurant-page/icons/password.png";
+  const openEye = "/restaurant-page/icons/opened-eye.png";
+  const closeEye = "/restaurant-page/icons/closed-eye.png";
 
   const [show, setShow] = useState(false);
   const [isLogin, setIsLogin] = useState(true);
@@ -62,9 +62,15 @@ const SignUp = () => {
       <ScrollTop />
       <div className="signup-section">
         <Link to="/" className="signup-name index">
-          <img src="/menu-icons/rice.png" alt="restaurant-logo" />
+          <img
+            src="/restaurant-page/menu-icons/rice.png"
+            alt="restaurant-logo"
+          />
           <p className="text-color">Rice & Spice</p>
-          <img src="/menu-icons/pepper.png" alt="restaurant-logo" />
+          <img
+            src="/restaurant-page/menu-icons/pepper.png"
+            alt="restaurant-logo"
+          />
         </Link>
         <div className="text-color signup-header">
           Sign Up to Savor Exclusive Flavors!

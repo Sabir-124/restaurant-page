@@ -25,13 +25,13 @@ const Juice = () => {
   };
 
   const Juice = [
-    ["/juice/apple.jpeg", "Apple", "150"],
-    ["/juice/banana.jpeg", "Banana", "150"],
-    ["/juice/lemon.jpeg", "Lemon", "150"],
-    ["/juice/carrot.jpeg", "Carrot", "150"],
-    ["/juice/mango.jpeg", "Mango", "200"],
-    ["/juice/orange.jpeg", "Orange", "200"],
-    ["/juice/strawberry.jpeg", "Strawberry", "200"],
+    ["/restaurant-page/juice/apple.jpeg", "Apple", "150"],
+    ["/restaurant-page/juice/banana.jpeg", "Banana", "150"],
+    ["/restaurant-page/juice/lemon.jpeg", "Lemon", "150"],
+    ["/restaurant-page/juice/carrot.jpeg", "Carrot", "150"],
+    ["/restaurant-page/juice/mango.jpeg", "Mango", "200"],
+    ["/restaurant-page/juice/orange.jpeg", "Orange", "200"],
+    ["/restaurant-page/juice/strawberry.jpeg", "Strawberry", "200"],
   ];
 
   const { juice } = useContext(MenuContext);

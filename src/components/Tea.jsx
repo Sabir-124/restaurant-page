@@ -26,16 +26,16 @@ const Tea = () => {
   };
 
   const Tea = [
-    ["/tea/black.jpeg", "Black tea", "60"],
-    ["/tea/green.jpeg", "Green tea", "70"],
-    ["/tea/mint.jpeg", "Mint tea", "60"],
-    ["/tea/ginger.jpeg", "Ginger tea", "70"],
-    ["/tea/lemon.jpeg", "Lemon tea", "80"],
-    ["/tea/chai-masala.jpeg", "Chai Masala", "100"],
-    ["/tea/chamomile.jpeg", "Chamomile tea", "120"],
-    ["/tea/honey.jpeg", "Honey tea", "80"],
-    ["/tea/milk.jpeg", "Milk tea", "100"],
-    ["/tea/rooibos.jpeg", "Rooibos tea", "120"],
+    ["/restaurant-page/tea/black.jpeg", "Black tea", "60"],
+    ["/restaurant-page/tea/green.jpeg", "Green tea", "70"],
+    ["/restaurant-page/tea/mint.jpeg", "Mint tea", "60"],
+    ["/restaurant-page/tea/ginger.jpeg", "Ginger tea", "70"],
+    ["/restaurant-page/tea/lemon.jpeg", "Lemon tea", "80"],
+    ["/restaurant-page/tea/chai-masala.jpeg", "Chai Masala", "100"],
+    ["/restaurant-page/tea/chamomile.jpeg", "Chamomile tea", "120"],
+    ["/restaurant-page/tea/honey.jpeg", "Honey tea", "80"],
+    ["/restaurant-page/tea/milk.jpeg", "Milk tea", "100"],
+    ["/restaurant-page/tea/rooibos.jpeg", "Rooibos tea", "120"],
   ];
 
   const { tea } = useContext(MenuContext);

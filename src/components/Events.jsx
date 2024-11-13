@@ -25,7 +25,11 @@ const Events = () => {
           </Link>
         </div>
         <div className="event-image">
-          <img className="pic" alt="event-pic" src="/images/event-image.jpeg" />
+          <img
+            className="pic"
+            alt="event-pic"
+            src="/restaurant-page/images/event-image.jpeg"
+          />
         </div>
       </div>
     </div>

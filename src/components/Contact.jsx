@@ -5,22 +5,22 @@ import WebContext from "../context/WebContext";
 const Contact = () => {
   const contacts1 = [
     {
-      image: "/icons/phone.png",
+      image: "/restaurant-page/icons/phone.png",
       text: "0300-0000000",
     },
     {
-      image: "/icons/time.png",
+      image: "/restaurant-page/icons/time.png",
       text: "Mon-Sun, 11 AM to 11 PM",
     },
   ];
 
   const contacts2 = [
     {
-      image: "/icons/email.png",
+      image: "/restaurant-page/icons/email.png",
       text: "rice&spice123@gmail.com",
     },
     {
-      image: "/icons/address.png",
+      image: "/restaurant-page/icons/address.png",
       text: "Near Sadaqat Store, Hazara town, Quetta",
     },
   ];

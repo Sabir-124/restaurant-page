@@ -6,8 +6,8 @@ const Footer = () => {
     <div className="footer-section">
       <div className="social-media">
         <p>Join our community through </p>
-        <img src="/icons/facebook.png" alt="facebook-icon" />
-        <img src="/icons/instagram.png" alt="instagram-icon" />
+        <img src="/restaurant-page/icons/facebook.png" alt="facebook-icon" />
+        <img src="/restaurant-page/icons/instagram.png" alt="instagram-icon" />
       </div>
       <div className="sign">
         <p>

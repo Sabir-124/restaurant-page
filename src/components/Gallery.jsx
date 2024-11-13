@@ -5,34 +5,34 @@ import WebContext from '../context/WebContext';
 const Gallery = () => {
   const photos = [
     {
-      gallery: '/images/gallery1.jpeg'
+      gallery: '/restaurant-page/images/gallery1.jpeg'
     },
     {
-      gallery: '/images/gallery2.png'
+      gallery: '/restaurant-page/images/gallery2.png'
     },
     {
-      gallery: '/images/gallery3.jpeg'
+      gallery: '/restaurant-page/images/gallery3.jpeg'
     },
     {
-      gallery: '/images/gallery4.jpeg'
+      gallery: '/restaurant-page/images/gallery4.jpeg'
     },
     {
-      gallery: '/images/gallery5.png'
+      gallery: '/restaurant-page/images/gallery5.png'
     },
     {
-      gallery: '/images/gallery6.jpeg'
+      gallery: '/restaurant-page/images/gallery6.jpeg'
     },
     {
-      gallery: '/images/gallery7.jpeg'
+      gallery: '/restaurant-page/images/gallery7.jpeg'
     },
     {
-      gallery: '/images/gallery8.jpeg'
+      gallery: '/restaurant-page/images/gallery8.jpeg'
     },
     {
-      gallery: '/images/gallery9.jpeg'
+      gallery: '/restaurant-page/images/gallery9.jpeg'
     },
     {
-      gallery: '/images/gallery10.jpeg'
+      gallery: '/restaurant-page/images/gallery10.jpeg'
     },
   ];
 

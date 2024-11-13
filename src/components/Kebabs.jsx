@@ -26,14 +26,14 @@ const Kebabs = () => {
   };
 
   const Kebabs = [
-    ["/menu-images/chicken.jpeg", "Chicken kebab", 300],
-    ["/menu-images/chapli.jpeg", "Chapli kebab", 230],
-    ["/menu-images/thikka.jpeg", "Thika kebab", 300],
-    ["/menu-images/reshmi.jpeg", "Reshmi kebab", 300],
-    ["/menu-images/gosfandi.jpeg", "Gosfandi kebab", 450],
-    ["/menu-images/jigar.jpeg", "Jigar kebab", 400],
-    ["/menu-images/malay-butti.jpeg", "Malayi Butti", 350],
-    ["/menu-images/chalaw.jpeg", "Chalaw kebab", 500],
+    ["/restaurant-page/menu-images/chicken.jpeg", "Chicken kebab", 300],
+    ["/restaurant-page/menu-images/chapli.jpeg", "Chapli kebab", 230],
+    ["/restaurant-page/menu-images/thikka.jpeg", "Thika kebab", 300],
+    ["/restaurant-page/menu-images/reshmi.jpeg", "Reshmi kebab", 300],
+    ["/restaurant-page/menu-images/gosfandi.jpeg", "Gosfandi kebab", 450],
+    ["/restaurant-page/menu-images/jigar.jpeg", "Jigar kebab", 400],
+    ["/restaurant-page/menu-images/malay-butti.jpeg", "Malayi Butti", 350],
+    ["/restaurant-page/menu-images/chalaw.jpeg", "Chalaw kebab", 500],
   ];
 
   const { kebab } = useContext(MenuContext);
