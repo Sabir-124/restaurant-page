@@ -112,7 +112,7 @@ const RiceSelection = () => {
       const order = {
         image: riceSelection[0],
         name: riceSelection[1],
-        price: selected,
+        price: selected === '' ? riceSelection[2] : selected,
         quantity: quantity,
       };
 

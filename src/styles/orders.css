@@ -2,10 +2,10 @@
   display: flex; flex-direction: column; row-gap: 20px; width: 800px;
 }
 .each-order {
-  display: flex; align-items: center; border: 1px solid #dd5738; border-radius: 120px; overflow: hidden; 
+  display: flex; align-items: center; border: 1px solid #dd5738; border-radius: 120px; overflow: hidden;
 }
 .order-image img {
-  width: 170px; height: 170px; object-fit: cover; object-position: center;
+  width: 170px; height: 100%; object-fit: fill; object-position: center;
 }
 .order-info {
   display: flex; flex-direction: column; margin-left: 50px; row-gap: 5px;
@@ -55,12 +55,14 @@
 .save:hover {
   background-color: green; color: white;
 }
-.on-message {
-  color: red; opacity: 1; margin-left: 15px;
+.update-section {
+  display: flex; align-items: center;
 }
-.off-message {
-  opacity: 0;
-}
-.hide {
-  display: none;
+@media (max-width: 768px) {
+  .order-section {
+    width: 100%;
+  }
+  .order-info {
+    margin-left: 20px;
+  }
 }

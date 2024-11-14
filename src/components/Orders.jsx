@@ -1,4 +1,4 @@
-import React, { useContext, useEffect, useRef } from "react";
+import React, { useContext, useEffect, useRef, useState } from "react";
 import "../styles/orders.css";
 import TotalQuantityContext from "../context/TotalQuantityContext";
 import OrderContext from "../context/OrderContext";
@@ -7,6 +7,9 @@ const Orders = () => {
   const { orders, updateOrder, deleteOrder } = useContext(OrderContext);
   const { setUpdateOrder } = useContext(TotalQuantityContext);
   const quantityRefs = useRef(orders.map(() => React.createRef()));
+  const [editQuantities, setEditQuantities] = useState(
+    orders.map((order) => order.quantity)
+  );
 
   useEffect(() => {
     const totalQuantity = orders.reduce(
@@ -26,19 +29,30 @@ const Orders = () => {
     deleteOrder(index);
   };
 
-  const handleSetOrder = (index) => {
-    const newQuantity = Number(quantityRefs.current[index].current.value);
-    const order = orders[index];
-    if (newQuantity < 1 || isNaN(newQuantity)) {
-      updateOrder(index, { ...order, onMessage: true });
-    } else {
-      updateOrder(index, {
-        ...order,
-        quantity: newQuantity,
-        update: false,
-        onMessage: false,
-      });
+  const handleQuantityChange = (index, event) => {
+    const newQuantity = event.target.value;
+    if (/^\d*$/.test(newQuantity) || newQuantity === "") {
+      // Update the temporary edit quantity
+      const updatedEditQuantities = [...editQuantities];
+      updatedEditQuantities[index] = newQuantity === "" ? "" : Number(newQuantity);
+      setEditQuantities(updatedEditQuantities);
+    }  
+  };
+
+  const handleKeyPress = (event) => {
+    if (!/[0-9]/.test(event.key)) {
+      event.preventDefault();
     }
+  }
+
+  const handleSetOrder = (index) => {
+    const order = orders[index];
+    const updatedOrder = { 
+      ...order, 
+      quantity: editQuantities[index], 
+      update: false 
+    };
+    updateOrder(index, updatedOrder);
   };
 
   return (
@@ -57,7 +71,11 @@ const Orders = () => {
                   <input
                     className="input"
                     ref={quantityRefs.current[index]}
-                    defaultValue={order.quantity}
+                    value={editQuantities[index]}
+                    type="number"
+                    min="1"
+                    onChange={(e) => handleQuantityChange(index, e)}
+                    onKeyPress={handleKeyPress}
                   />
                 ) : (
                   <div>
@@ -83,7 +101,7 @@ const Orders = () => {
                     </button>
                   </div>
                 ) : (
-                  <div>
+                  <div className="update-section">
                     <button
                       onClick={() => handleSetOrder(index)}
                       className="save"
@@ -96,11 +114,6 @@ const Orders = () => {
                     >
                       Cancel
                     </button>
-                    <span
-                      className={order.onMessage ? "on-message" : "off-message"}
-                    >
-                      Please enter valid quantity!
-                    </span>
                   </div>
                 )}
               </div>
