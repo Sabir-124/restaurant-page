@@ -1,5 +1,5 @@
 .order-header-section {
-  display: flex; position: fixed; top: 0; left: 0; right: 0; background-color: rgba(0, 0, 0, 0.5); height: 69px; z-index: 2; justify-content: space-between; align-items: center; box-shadow: 0 0 10px 0 white; padding: 0 50px;
+  display: flex; position: fixed; top: 0; left: 0; right: 0; background-color: rgba(0, 0, 0, 0.5); height: 50px; z-index: 2; justify-content: space-between; align-items: center; box-shadow: 0 0 10px 0 white; padding: 0 30px;
 }
 .restaurant-name {
   font-size: 25px; font-weight: 700; display: flex; align-items: center; column-gap: 15px; cursor: pointer;
@@ -45,4 +45,9 @@
 }
 .back-button:hover {
   color: white;
+}
+@media (max-width: 614px) {
+  .order-quantities {
+    display: none;
+  }
 }

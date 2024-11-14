@@ -2,10 +2,10 @@
   display: flex; justify-content: center; flex-direction: column; row-gap: 150px; align-items: center;
 }
 .part1 {
-  display: flex; justify-content: center; align-items: center; text-align: center; column-gap: 50px; padding: 0 50px;
+  display: flex; justify-content: center; align-items: center; text-align: center; column-gap: 50px; 
 }
 .part2 {
-  display: flex; justify-content: center; align-items: center; text-align: center; column-gap: 50px; padding: 0 50px; flex-direction: row-reverse;
+  display: flex; justify-content: center; align-items: center; text-align: center; column-gap: 50px; flex-direction: row-reverse;
 }
 .image-part img {
   width: 500px; height: 400px; border-radius: 50px 100px 50px 200px; animation: glo 2s infinite alternate; 
@@ -18,7 +18,7 @@
   flex: 1;
 }
 .text-part {
-  flex: 1; max-width: 1000px;
+  flex: 1; max-width: 1000px; padding: 0 50px;
 }
 .about {
   font-size: 20px; line-height: 150%;

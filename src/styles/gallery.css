@@ -20,7 +20,7 @@
   display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 10px; margin: 0 auto;
 }
 .galleries img {
-  width: 300px; display: block; object-fit: cover;
+  width: 300px; object-fit: cover;
 }
 @media (max-width: 1024px) {
   .galleries {

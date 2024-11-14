@@ -1,11 +1,14 @@
 .menu-header-section {
-  display: flex; position: fixed; top: 0; left: 0; right: 0; background-color: rgba(0, 0, 0, 0.5); height: 50px; z-index: 2; justify-content: space-around; align-items: center; box-shadow: 0 0 10px 0 white;
+  display: flex; position: fixed; top: 0; left: 0; right: 0; background-color: rgba(0, 0, 0, 0.5); height: 50px; z-index: 2; justify-content: space-between; align-items: center; box-shadow: 0 0 10px 0 white; padding: 0 40px;
 }
 .restaurant-name {
   font-size: 25px; font-weight: 700; display: flex; align-items: center; column-gap: 15px; cursor: pointer; text-decoration: none; text-align: center;
 }
 .restaurant-name img{
   width: 30px;
+}
+.menu-options {
+  left: -201px;
 }
 .links {
   display: flex; justify-content: space-around; flex: 1; max-width: 45%; align-items: center; text-align: center; column-gap: 5px;
@@ -74,10 +77,10 @@
     display: none;
   }
 }
+@media (max-width: 853px) {
+
+}
 @media (max-width: 768px) {
-  .restaurant-name p{
-    display: none;
-  }
   .links{
     max-width: 100%; padding: 0 15px;
   }

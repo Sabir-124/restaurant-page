@@ -2,7 +2,7 @@
   display: flex; flex-direction: column; justify-content: center; align-items: center; row-gap: 50px;
 } 
 .contact-contents {
-  display: flex; flex-direction: column; row-gap: 50px; padding: 0 120px;
+  display: flex; flex-direction: column; row-gap: 50px;
 }
 .contact-text { 
   display: flex; flex-direction: column; text-align: center; padding: 0 100px;
@@ -14,7 +14,7 @@
   font-size: 20px;
 }
 .contacts {
-  display: flex; row-gap: 60px; column-gap: 50px; flex-direction: row; justify-content: center; align-items: center;
+  display: flex; row-gap: 60px; column-gap: 50px; flex-direction: row; justify-content: center; align-items: center; padding:  0 80px;
 }
 .contact {
   display: flex; align-items: center; column-gap: 20px; justify-content: center; text-align: center; flex-direction: row; flex: 1;
@@ -23,12 +23,25 @@
   width: 100px; z-index: 1; max-height: 100px;
 }
 .contact span {
-  border: 1px solid; padding: 30px; flex: 1; max-width: 100%;
-  color: #dd5738; column-gap: 50px;
+  border: 1px solid; padding: 30px; width: 100%;
+  color: #dd5738; 
   font-size: 30px; font-weight: 500; border-radius: 50px;
 }
 @media (max-width: 1396px) {
   .contacts {
     flex-direction: column; align-items: stretch;
+  }
+}
+@media (max-width: 698px) {
+  .contact span {
+    width: 100%;
+  }
+  .contacts {
+    padding: 0 5%;
+  }
+}
+@media (max-width: 512px) {
+  .contact { 
+    flex-direction: column; row-gap: 30px; max-width: 90%; margin: auto; text-align: center;
   }
 }
