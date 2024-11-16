@@ -108,11 +108,11 @@
     display: none;
   }
 }
-@media (max-width: 376px) {
+@media (max-width: 384px) {
   .header {
     padding: 0 30px;
   }
   .restaurant-name p{
-    font-size: 20px;
+    font-size: 18px;
   }
 }

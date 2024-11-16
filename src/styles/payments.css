@@ -26,16 +26,16 @@ textarea:focus {
   font-weight: 600; border-top-color: white; border-top-width: 1px; border-top-style: solid; padding-top: 20px;
 }
 .payment button {
-  background-color: transparent; font-size: 25px; border: 1px solid #dd5738; border-radius: 40px; padding: 10px 0; color: #dd5738; cursor: pointer;
+  background-color: transparent; font-size: 20px; border: 1px solid #dd5738; border-radius: 40px; padding: 10px 0; color: #dd5738; cursor: pointer;
 }
 .payment button:hover {
   background: linear-gradient(300deg, #FF0000, #FFA500); color: white; 
 }
-@media (max-width: 376px) {
+@media (max-width: 400px) {
   .payment-section p {
     font-size: 20px;
   }
   .payment-section span {
-    font-size: 14px;
+    font-size: 11px;
   }
 }
