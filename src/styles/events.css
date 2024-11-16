@@ -46,3 +46,11 @@
     flex-direction: column; row-gap: 60px;
   }
 }
+@media (max-width: 426px) {
+  .event-image img {
+    width: 300px;
+  }
+  .event-text {
+    padding: 0 25px;
+  }
+}

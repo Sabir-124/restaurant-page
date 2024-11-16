@@ -1,6 +1,6 @@
 .footer-section {
   background: linear-gradient(180deg, #FF000080, #FFA50080);
-  position: fixed; bottom: 0; left: 0; right: 0; z-index: 2; height: 55px; display: flex; justify-content: space-around; align-items: center; text-align: center;
+  position: fixed; bottom: 0; left: 0; right: 0; z-index: 2; height: 55px; display: flex; justify-content: space-around; align-items: center; text-align: center; column-gap: 10px;
 }
 .social-media {
   display: flex; column-gap: 15px; align-items: center;
@@ -12,7 +12,7 @@
   font-size: 18px; font-weight: 500;
 }
 .sign {
-  display: flex; align-items: center; column-gap: 20px;
+  display: flex; align-items: center;
 }
 .sign button {
   background-color: transparent; border: 1px solid white; padding: 10px 15px; color: white; cursor: pointer; transition: background-color 0.5s ease; font-weight: 500; font-size: 15px;
@@ -23,5 +23,19 @@
 @media (max-width: 1024px) {
   .sign p {
     display: none;
+  }
+}
+@media (max-width: 426px) {
+  .footer-section {
+    justify-content: center; padding: 0;
+  }
+  .social-media {
+    column-gap: 10px;
+  }
+  .social-media p {
+    font-size: 12px; margin: 0;
+  }
+  .social-media img {
+    width: 30px; height: 30px;
   }
 }

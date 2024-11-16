@@ -21,3 +21,17 @@
     flex-direction: column; row-gap: 20px;
   }
 }
+@media (max-width: 426px) {
+  .before-review {
+    font-size: 25px; margin-top: 0;
+  }
+  .review-image img {
+    width: 100px; height: 100px;
+  }
+  .reviews {
+    padding: 0 30px;
+  }
+  .review-text {
+    font-size: 15px;
+  }
+}

@@ -89,7 +89,7 @@
 }
 @media (max-width: 854px) {
   .header {
-    justify-content: space-between; padding:  0 40px;
+    justify-content: space-between; padding: 0 40px;
   }
   .links {
     display: none !important;
@@ -101,5 +101,18 @@
   }
   .options {
     display: none;
+  }
+}
+@media (max-width: 426px) {
+  .restaurant-name img {
+    display: none;
+  }
+}
+@media (max-width: 376px) {
+  .header {
+    padding: 0 30px;
+  }
+  .restaurant-name p{
+    font-size: 20px;
   }
 }

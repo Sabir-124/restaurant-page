@@ -1,5 +1,5 @@
 .rice-selection-section {
-  display: flex; flex-direction: column; row-gap: 30px;
+  display: flex; flex-direction: column; row-gap: 30px; text-align: center;
 }
 .recipes {
   text-align: center; position: relative; margin: 0 auto; max-width: 100%; display: flex; width: 1300px;

@@ -77,11 +77,13 @@
     display: none;
   }
 }
-@media (max-width: 853px) {
-
-}
 @media (max-width: 768px) {
   .links{
     max-width: 100%; padding: 0 15px;
+  }
+}
+@media (max-width: 376px) {
+  .menu-header-section {
+    padding: 0 30px;
   }
 }

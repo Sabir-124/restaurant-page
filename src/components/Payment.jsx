@@ -41,7 +41,7 @@ const Payments = () => {
           <span>Rs. {totalPrice > 0 ? 30 : 0}/-</span>
         </div>
         <div className="discount-summary">
-          <span>Discounts ({discountPercent}%) :</span>
+          <span>Discounts({discountPercent}%) :</span>
           <span>Rs. {discountAmount}/-</span>
         </div>
         <div className="total-summary">

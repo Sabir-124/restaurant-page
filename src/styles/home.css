@@ -11,11 +11,16 @@
   position: absolute; top: 50%; left: 50%; text-align: center; transform: translate(-50%, -50%);
 }
 .quote {
-  font-size: 40px; font-weight: 700; margin: 0;
+  font-size: 45px; font-weight: 700; margin: 0;
 }
 .welcome {
   font-size: 20px; font-weight: 500;
 }
 .welcome-2 {
   font-style: italic;
+}
+@media (max-width: 426px) {
+  .quote {
+    font-size: 30px;
+  }
 }

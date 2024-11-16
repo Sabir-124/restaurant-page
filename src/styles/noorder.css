@@ -7,3 +7,11 @@
 .no-order p{
   margin: 0; font-size: 35px; font-weight: 600; font-style: italic;
 }
+@media (max-width: 426px) {
+  .no-order img {
+    width: 120px;
+  }
+  .no-order p {
+    font-size: 25px; margin-top: -20px;
+  }
+}
